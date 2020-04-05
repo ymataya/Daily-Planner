@@ -115,7 +115,7 @@ textarea:focus{
   /* border-top: 1px dashed #000000; */
 }
 
-.past {
+/* .past {
   background-color: #d3d3d3;
   color: white;
 }
@@ -128,7 +128,7 @@ textarea:focus{
 .future {
   background-color: #daa953;
   color: white;
-}
+} */
 
 .save {
   background-color: #8aa899;

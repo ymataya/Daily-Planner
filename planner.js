@@ -93,7 +93,7 @@ for (var i=0; i<8; i++) {
         $("#4pm").css("background-color", "#72a78a");
     }
     if (timeCompare === "17") {
-        $("#5pm").css("background-color", "red");
+        $("#5pm").css("background-color", "#aeccbc");
     } else if (parseInt(timeCompare) < 17) {
         $("#5pm").css("background-color", "#72a78a");
     }
