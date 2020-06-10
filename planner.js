@@ -22,15 +22,12 @@ $("#5pm-text").append(task)
 var task = localStorage.getItem("12pm");
 $("#12pm-text").append(task)
 
-//HTML Variables
 var currentDay=$("#currentDay");
 var currentTime=$("#currentTime");
 var hourTime=$(".time");
 
-//Other Variables
 var dateNow = moment().format('dddd, MMMM Do YYYY');
 var timeNow = moment().format('H:mm');
-// console.log(timeNow)
 
 function timeCheck (t) {
 var curTime = ""
@@ -45,7 +42,6 @@ for(i=0;i<t.length;i++){
     console.log(curTime)
 }
 console.log(curTime);
-// console.log(typeof timeNow)
 }
 var timeCompare = timeCheck(timeNow)
 console.log(timeCompare, "check time")
@@ -98,22 +94,21 @@ for (var i=0; i<8; i++) {
         $("#5pm").css("background-color", "#72a78a");
     }
 }
-//Displaying on Web
+
 currentDay.text(dateNow);
 currentTime.text(timeNow);
 } 
 
-); //end of document ready
+);
 
-//Input
 $(document).on("click", ".save", function(e){
     e.preventDefault();
     console.log("clicking");
     console.log(e.target);
-    if (e.target.id === "9am-save") { // does it mean the function should target the id called "9am-save"?
-        var text=$("#9am-text").val(); // the val() will come from user input, which is typed in in the textarea id called "#time-text"
+    if (e.target.id === "9am-save") { 
+        var text=$("#9am-text").val(); 
         console.log(text)
-        localStorage.setItem("9am",text); // sending the text ($("#time-text".val()) to the local storage
+        localStorage.setItem("9am",text);
     } 
     if (e.target.id === "10am-save") {
         var text=$("#10am-text").val();
